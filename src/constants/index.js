@@ -1,32 +1,20 @@
 import {
   frontend,
   backend,
-  ux,
-  prototyping,
   javascript,
   typescript,
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   git,
   figma,
-  docker,
   postgresql,
-  rubyrails,
-  graphql,
   komikult,
   leaderboard,
   math,
-  movie,
-  nyeusi,
-  space,
-  coverhunt,
-  dcc,
-  kelhel,
-  microverse,
+  company
 } from '../assets';
 
 export const navLinks = [
@@ -52,14 +40,6 @@ const services = [
   {
     title: 'Backend Developer',
     icon: backend,
-  },
-  {
-    title: 'Placeholder',
-    icon: ux,
-  },
-  {
-    title: 'Placeholder',
-    icon: prototyping,
   },
 ];
 
@@ -112,14 +92,14 @@ const experiences = [
   {
     title: 'Front-End Developer',
     company_name: 'Comono India',
-    icon: coverhunt,
+    icon: company,
     iconBg: '#333333',
     date: 'Aug 2021 - May 2023',
   },
   {
     title: 'Backend Student Intern',
     company_name: 'Global Discovery Academy',
-    icon: microverse,
+    icon: company,
     iconBg: '#333333',
     date: 'Dec 2020 - April 2021',
   },

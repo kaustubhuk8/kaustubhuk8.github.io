@@ -25,20 +25,18 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    // sign up on emailjs.com (select the gmail service and connect your account).
-    //click on create a new template then click on save.
     emailjs
       .send(
-        'serviceID', // paste your ServiceID here (you'll get one when your service is created).
-        'templateID', // paste your TemplateID here (you'll find it under email templates).
+        'service_9gw6v7h', // ServiceID 
+        'template_y6ijuef', // TemplateID
         {
           from_name: form.name,
-          to_name: 'Kaustubh Kulkarni', // put your name here.
+          to_name: 'Kaustubh Kulkarni', 
           from_email: form.email,
-          to_email: 'kukulkar@asu.edu', //put your email here.
+          to_email: 'hbustuak15@gmail.com', 
           message: form.message,
         },
-        'yourpublickey' //paste your Public Key here. You'll get it in your profile section.
+        'OoA5bbx21isE9FMbB' //Public Key
       )
       .then(
         () => {
@@ -66,8 +64,8 @@ const Contact = () => {
       <motion.div
         variants={slideIn('left', 'tween', 0.2, 1)}
         className="flex-[0.75] bg-jet p-8 rounded-2xl">
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadTextLight}>Contact.</h3>
+        <p className='sm:text-[18px] text-[16px] text-timberWolf uppercase tracking-wider font-semibold font-poppins'>Get in touch</p>
+        <h3 className='text-[#EF4044] font-black md:text-[60px] sm:text-[48px] xs:text-[40px] text-[30px] font-poppins'>Contact.</h3>
 
         <form
           ref={formRef}

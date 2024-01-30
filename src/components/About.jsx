@@ -18,7 +18,7 @@ const ServiceCard = ({ index, title, icon }) => {
         }}
         className="bg-jetLight rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
         <img src={icon} alt={title} className="w-16 h-16 object-contain" />
-        <h3 className="text-taupe text-[18px] font-bold text-center">
+        <h3 className="text-white text-[18px] font-bold text-center">
           {title}
         </h3>
       </div>
@@ -42,7 +42,7 @@ const About = () => {
        
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-20 flex flex-wrap justify-center gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
