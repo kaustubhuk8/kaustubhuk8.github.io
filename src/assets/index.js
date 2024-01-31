@@ -3,9 +3,6 @@ import nairobi from './backgrounds/nairobi.png';
 import whiteabstract from './backgrounds/white-abstract.png';
 import worldmap from './backgrounds/world-map.png';
 
-import logo from './logo/logo-black.png';
-import logotext from './logo/logo-text-black.png';
-
 import prof from './personal/prof.jpg';
 
 import backend from './icons/backend.png';
@@ -43,17 +40,13 @@ import company from './company/company.png';
 import komikult from './projects/komikult.png';
 import leaderboard from './projects/leaderboard.png';
 import math from './projects/math-magicians.png';
-import movie from './projects/movie-metro.png';
-import nyeusi from './projects/nyeusi.png';
-import space from './projects/space-hub.png';
+
 
 export {
   bwmap,
   nairobi,
   whiteabstract,
   worldmap,
-  logo,
-  logotext,
   prof,
   backend,
   ux,
@@ -86,8 +79,5 @@ export {
   komikult,
   leaderboard,
   math,
-  movie,
-  nyeusi,
-  space,
   company
 };

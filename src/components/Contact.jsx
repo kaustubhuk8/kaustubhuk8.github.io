@@ -1,17 +1,17 @@
-import { useState, useRef } from 'react';
-import { motion } from 'framer-motion';
-import emailjs from '@emailjs/browser';
-import { styles } from '../styles';
-import { SectionWrapper } from '../hoc';
-import { slideIn } from '../utils/motion';
-import { send, sendHover } from '../assets';
+import { useState, useRef } from "react";
+import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
+import { styles } from "../styles";
+import { SectionWrapper } from "../hoc";
+import { slideIn } from "../utils/motion";
+import { send, sendHover } from "../assets";
 
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
   const [loading, setLoading] = useState(false);
 
@@ -27,32 +27,32 @@ const Contact = () => {
 
     emailjs
       .send(
-        'service_9gw6v7h', // ServiceID 
-        'template_y6ijuef', // TemplateID
+        "service_9gw6v7h", // ServiceID
+        "template_y6ijuef", // TemplateID
         {
           from_name: form.name,
-          to_name: 'Kaustubh Kulkarni', 
+          to_name: "Kaustubh Kulkarni",
           from_email: form.email,
-          to_email: 'hbustuak15@gmail.com', 
+          to_email: "hbustuak15@gmail.com",
           message: form.message,
         },
-        'OoA5bbx21isE9FMbB' //Public Key
+        "OoA5bbx21isE9FMbB" //Public Key
       )
       .then(
         () => {
           setLoading(false);
-          alert('Thank you. I will get back to you as soon as possible.');
+          alert("Thank you. I will get back to you as soon as possible.");
 
           setForm({
-            name: '',
-            email: '',
-            message: '',
+            name: "",
+            email: "",
+            message: "",
           });
         },
         (error) => {
           setLoading(false);
           console.log(error);
-          alert('Something went wrong. Please try again.');
+          alert("Something went wrong. Please try again.");
         }
       );
   };
@@ -60,17 +60,24 @@ const Contact = () => {
   return (
     <div
       className="-mt-[8rem] xl:flex-row flex-col-reverse 
-      flex gap-10 overflow-hidden">
+      flex gap-10 overflow-hidden"
+    >
       <motion.div
-        variants={slideIn('left', 'tween', 0.2, 1)}
-        className="flex-[0.75] bg-jet p-8 rounded-2xl">
-        <p className='sm:text-[18px] text-[16px] text-timberWolf uppercase tracking-wider font-semibold font-poppins'>Get in touch</p>
-        <h3 className='text-[#EF4044] font-black md:text-[60px] sm:text-[48px] xs:text-[40px] text-[30px] font-poppins'>Contact.</h3>
+        variants={slideIn("left", "tween", 0.2, 1)}
+        className="flex-[0.75] bg-jet p-8 rounded-2xl"
+      >
+        <p className="sm:text-[18px] text-[16px] text-[#EF4044] uppercase tracking-wider font-semibold font-poppins">
+          Get in touch
+        </p>
+        <h3 className="text-timberWolf font-black md:text-[60px] sm:text-[48px] xs:text-[40px] text-[30px] font-poppins">
+          Contact.
+        </h3>
 
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="mt-10 flex flex-col gap-6 font-poppins">
+          className="mt-10 flex flex-col gap-6 font-poppins"
+        >
           <label className="flex flex-col">
             <span className="text-timberWolf font-medium mb-4">Your Name</span>
             <input
@@ -123,17 +130,18 @@ const Contact = () => {
             font-bold font-beckman items-center py-5
             whitespace-nowrap sm:w-[130px] sm:h-[50px] 
             w-[100px] h-[45px] rounded-[10px] bg-night 
-            hover:bg-battleGray hover:text-eerieBlack 
+            hover:bg-timberWolf hover:text-[#EF4044] 
             transition duration-[0.2s] ease-in-out"
             onMouseOver={() => {
               document
-                .querySelector('.contact-btn')
-                .setAttribute('src', sendHover);
+                .querySelector(".contact-btn")
+                .setAttribute("src", sendHover);
             }}
             onMouseOut={() => {
-              document.querySelector('.contact-btn').setAttribute('src', send);
-            }}>
-            {loading ? 'Sending' : 'Send'}
+              document.querySelector(".contact-btn").setAttribute("src", send);
+            }}
+          >
+            {loading ? "Sending" : "Send"}
             <img
               src={send}
               alt="send"
@@ -147,4 +155,4 @@ const Contact = () => {
   );
 };
 
-export default SectionWrapper(Contact, 'contact');
+export default SectionWrapper(Contact, "contact");

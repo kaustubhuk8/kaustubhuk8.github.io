@@ -1,5 +1,5 @@
-import { styles } from '../styles';
-import { prof, bwmap, worldmap } from '../assets';
+import { styles } from "../styles";
+import { prof, bwmap, worldmap } from "../assets";
 
 const Hero = () => {
   return (
@@ -20,12 +20,14 @@ const Hero = () => {
       </div>
       <section
         className="relative flex sm:flex-row flex-col w-full h-screen mx-auto 
-        sm:bg-hero bg-hero-mobile overflow-hidden">
+        sm:bg-hero bg-hero-mobile overflow-hidden"
+      >
         <div
           className={`absolute inset-0 sm:top-[250px] top-[150px] 
           lg:top-[150px] xl:top-[250px] ${styles.paddingX} 
           max-w-7xl mx-auto flex flex-row items-start
-          justify-between gap-3`}>
+          justify-between gap-3`}
+        >
           <div className="flex flex-col justify-center items-center mt-5 ml-3">
             <div className="w-5 h-5 rounded-full bg-[#0a0a0a] sm:hidden" />
             <div className="w-1 sm:h-80 h-40 bw-gradient sm:hidden" />
@@ -33,24 +35,26 @@ const Hero = () => {
 
           <div>
             <h1
-              className={`${styles.heroHeadText} text-[#2E2B74] font-poppins uppercase`}>
-              Hi, I'm{' '}
+              className={`${styles.heroHeadText} text-eerieBlack font-poppins uppercase`}
+            >
+              Hi, I'm{" "}
               <span
                 className="sm:text-[#EF4044] sm:text-[90px] 
                 text-[#EF4044] text-[50px] font-mova
-                font-extrabold uppercase">
+                font-extrabold uppercase"
+              >
                 Kaustubh
               </span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-eerieBlack`}>
-            Experienced frontend developer {" "}
-            
-            with a passion for creating visually stunning and user-friendly websites.
+              Experienced frontend developer with a passion for creating
+              visually stunning and user-friendly websites.
             </p>
           </div>
           <div
             className="w-screen flex flex-col items-start 
-            justify-center sm:-ml-[3rem] xxs:mt-4"></div>
+            justify-center sm:-ml-[3rem] xxs:mt-4"
+          ></div>
 
           <div></div>
         </div>
