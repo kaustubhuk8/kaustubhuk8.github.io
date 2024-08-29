@@ -69,7 +69,7 @@ const Hero = () => {
 
         <div>
           <img
-            className="absolute right-28 rounded-full animate-[imgFloat_7s_ease-in-out_infinite] top-64 w-[380px] h-[380px]"
+            className="absolute right-20 rounded-full animate-[imgFloat_7s_ease-in-out_infinite] top-64 w-[380px] h-[380px]"
             src={prof}
             alt="Kuk"
           />

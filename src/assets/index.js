@@ -20,6 +20,7 @@ import resume from './icons/resume.png';
 import send from './icons/send.png';
 import sendHover from './icons/sendHover.png';
 
+import Kubernetes from './tech/kubernetes.png';
 import css from './tech/css.png';
 import docker from './tech/docker.png';
 import figma from './tech/figma.png';
@@ -49,6 +50,7 @@ export {
   worldmap,
   prof,
   backend,
+  Kubernetes,
   ux,
   frontend,
   prototyping,

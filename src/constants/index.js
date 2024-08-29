@@ -1,5 +1,7 @@
 import {
   frontend,
+  docker,
+  Kubernetes,
   backend,
   javascript,
   typescript,
@@ -39,6 +41,10 @@ const services = [
   },
   {
     title: 'Backend Developer',
+    icon: backend,
+  },
+  {
+    title: 'Devops',
     icon: backend,
   },
 ];
@@ -84,6 +90,14 @@ const technologies = [
   {
     name: 'figma',
     icon: figma,
+  },
+  {
+    name: 'Docker',
+    icon: docker,
+  },
+  {
+    name: 'Kubernetes',
+    icon: Kubernetes,
   },
   
 ];
