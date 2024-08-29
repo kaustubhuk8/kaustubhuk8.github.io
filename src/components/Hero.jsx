@@ -1,5 +1,7 @@
 import { styles } from "../styles";
+import { motion } from "framer-motion";
 import { prof, bwmap, worldmap } from "../assets";
+import { containerVariants, itemVariants } from "../utils/motion";
 
 const Hero = () => {
   return (
@@ -33,24 +35,30 @@ const Hero = () => {
             <div className="w-1 sm:h-80 h-40 bw-gradient sm:hidden" />
           </div>
 
-          <div>
+          <motion.div
+            variants={containerVariants()}
+            animate="visible"
+            initial="hidden"
+          >
             <h1
               className={`${styles.heroHeadText} text-eerieBlack font-poppins uppercase`}
             >
               Hi, I'm{" "}
-              <span
+              <motion.span
+                variants={itemVariants()}
+                animate="visible"
                 className="sm:text-[#EF4044] sm:text-[90px] 
                 text-[#EF4044] text-[50px] font-mova
                 font-extrabold uppercase"
               >
                 Kaustubh
-              </span>
+              </motion.span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-eerieBlack`}>
               Experienced frontend developer with a passion for creating
               visually stunning and user-friendly websites.
             </p>
-          </div>
+          </motion.div>
           <div
             className="w-screen flex flex-col items-start 
             justify-center sm:-ml-[3rem] xxs:mt-4"
