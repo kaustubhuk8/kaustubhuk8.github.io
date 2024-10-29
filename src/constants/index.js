@@ -16,6 +16,8 @@ import {
   komikult,
   leaderboard,
   math,
+  aws,
+  nextjs,
   company
 } from '../assets';
 
@@ -71,6 +73,10 @@ const technologies = [
     icon: reactjs,
   },
   {
+    name: 'Next.js',
+    icon: nextjs,
+  },
+  {
     name: 'Tailwind CSS',
     icon: tailwind,
   },
@@ -82,6 +88,10 @@ const technologies = [
   {
     name: 'postgresql',
     icon: postgresql,
+  },
+  {
+    name: 'AWS',
+    icon: aws,
   },
   {
     name: 'git',
@@ -104,14 +114,14 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'Front-End Developer',
-    company_name: 'Comono India',
+    title: 'Founding Software Engineer',
+    company_name: 'Prevale',
     icon: company,
     iconBg: '#333333',
     date: 'Aug 2021 - May 2023',
   },
   {
-    title: 'Backend Student Intern',
+    title: 'Software Developer Intern',
     company_name: 'Global Discovery Academy',
     icon: company,
     iconBg: '#333333',
