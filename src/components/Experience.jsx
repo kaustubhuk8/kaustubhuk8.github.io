@@ -95,7 +95,10 @@ const Experience = () => {
               </div>
             }
           >
-            <a href='/resume/Resume_FullStack.pdf' download={'Kaustubh_Kulkarni_Resume.pdf'}>
+            <a
+              href="/resume/Kaustubh_Uday_Kulkarni_Resume_FullStack_Next.js.pdf"
+              download={"Kaustubh_Kulkarni_Resume.pdf"}
+            >
               <button
                 className="live-demo flex justify-between 
               sm:text-[18px] text-[14px] text-timberWolf 
