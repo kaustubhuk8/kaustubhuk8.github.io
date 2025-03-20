@@ -96,7 +96,7 @@ const Experience = () => {
             }
           >
             <a
-              href="public/resume/resume.pdf"
+              href="/resume/resume.pdf"
               download={"Kaustubh_Kulkarni_Resume.pdf"}
             >
               <button
