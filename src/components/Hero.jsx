@@ -85,8 +85,17 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { prof, bwmap, worldmap } from "../assets";
 import { containerVariants, itemVariants } from "../utils/motion";
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 const Hero = () => {
+  const [text] = useTypewriter({
+    words: ['Kaustubh'],
+    loop: true,
+    delaySpeed: 2000,
+    typeSpeed: 100,
+    deleteSpeed: 50,
+  });
+  
   return (
     <section className="relative w-full h-screen">
       {/* Background Maps */}
@@ -126,45 +135,45 @@ const Hero = () => {
               className={`${styles.heroHeadText} text-timberWolf font-poppins uppercase`}
               variants={itemVariants()}
             >
-              Hi, I'm <span className="text-[#EF4044] font-mova">Kaustubh</span>
+              Hi, I'm <br />
+              <span className="text-[#EF4044] font-mova">{text}<Cursor/></span>
             </motion.h1>
 
             <motion.p
               className={`${styles.heroSubText} mt-2 text-timberWolf`}
               variants={itemVariants()}
             >
-              Experienced frontend developer with a passion for creating
+              Experienced Full-Stack Developer with a passion for creating
               visually stunning and user-friendly websites.
             </motion.p>
           </motion.div>
 
           {/* Profile Image */}
-          <motion.div
-            className="relative w-full sm:w-1/2 flex justify-center sm:justify-end"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            <div className="relative w-[280px] sm:w-[350px] aspect-square">
-              <img
-                src={prof}
-                alt="Kaustubh"
-                className="rounded-full w-full h-full object-cover shadow-2xl"
-              />
-              {/* Floating Animation */}
+            <motion.div
+              className="relative w-[320px] sm:w-[400px] rounded-full overflow-hidden shadow-xl"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#ef404480] via-transparent to-transparent blur-2xl" />
+              {/* Floating animation wrapper */}
               <motion.div
-                className="absolute inset-0 rounded-full"
-                animate={{
-                  y: [0, -20, 0],
-                }}
+                animate={{ y: [0, -20, 0] }}
                 transition={{
-                  duration: 7,
+                  duration: 6,
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
-              />
-            </div>
-          </motion.div>
+                className="w-full h-full"
+              >
+                <img
+                  src={prof}
+                  alt="Kaustubh"
+                  className="w-full h-full object-cover object-top"
+                />
+              </motion.div>
+            </motion.div>
+
         </div>
       </div>
     </section>

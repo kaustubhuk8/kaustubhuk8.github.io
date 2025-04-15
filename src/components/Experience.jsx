@@ -96,7 +96,7 @@ const Experience = () => {
             }
           >
             <a
-              href="/resume/Kaustubh_Uday_Kulkarni_Resume_FullStack_Next.js.pdf"
+              href="public/resume/resume.pdf"
               download={"Kaustubh_Kulkarni_Resume.pdf"}
             >
               <button

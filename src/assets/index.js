@@ -39,9 +39,10 @@ import postgresql from './tech/postgresql.png';
 
 import company from './company/company.png';
 
-import komikult from './projects/komikult.png';
-import leaderboard from './projects/leaderboard.png';
-import math from './projects/math-magicians.png';
+import VisuoCode from './projects/VisuoCode.png';
+import MediPredict from './projects/MediPredict.png';
+import MorphoVid from './projects/MorphoVid.png';
+import VisionScale from './projects/VisionScale.png';
 
 
 export {
@@ -79,8 +80,9 @@ export {
   nextjs,
   tailwind,
   typescript,
-  komikult,
-  leaderboard,
-  math,
+  VisuoCode,
+  MediPredict,
+  MorphoVid,
+  VisionScale,
   company
 };

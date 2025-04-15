@@ -13,11 +13,12 @@ import {
   git,
   figma,
   postgresql,
-  komikult,
-  leaderboard,
-  math,
   aws,
   nextjs,
+  MediPredict,
+  MorphoVid,
+  VisionScale,
+  VisuoCode,
   company
 } from '../assets';
 
@@ -133,68 +134,92 @@ const experiences = [
 const projects = [
   {
     id: 'project-1',
-    name: 'HoopsInsight',
-    description: 'A web app that helps you follow everything NBA',
+    name: 'VisuoCode',
+    description: 'AI-powered tool that visually explains code logic using animated data structures and step-by-step execution.',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'mongodb',
+        name: 'python',
         color: 'green-text-gradient',
       },
       {
-        name: 'tailwind',
+        name: 'd3.js',
         color: 'pink-text-gradient',
       },
     ],
-    image: komikult,
-    repo: 'https://github.com/shaqdeff/KomiKult',
-    demo: 'https://shaqdeff.github.io/KomiKult/',
+    image: VisuoCode,
+    repo: 'https://github.com/kaustubhuk8/CodeVisualizer',
+    demo: '',
   },
   {
     id: 'project-2',
-    name: 'WorkshopWiz',
+    name: 'MediPredict',
     description:
-      'A Workshop management app that helps you automate tasks',
+      'ML-driven pipeline for predicting diseases from patient data using ensemble models and scikit-learn.',
     tags: [
       {
-        name: 'react',
+        name: 'python',
         color: 'blue-text-gradient',
       },
       {
-        name: 'restapi',
+        name: 'pandas',
         color: 'green-text-gradient',
       },
       {
-        name: 'scss',
+        name: 'scikit-learn',
         color: 'pink-text-gradient',
       },
     ],
-    image: leaderboard,
-    repo: 'https://github.com/shaqdeff/Leaderboard',
-    demo: 'https://shaqdeff.github.io/Leaderboard/',
+    image: MediPredict,
+    repo: 'https://github.com/kaustubhuk8/PredicitiveHealthcare',
+    demo: '',
   },
   {
     id: 'project-3',
-    name: 'TrafficFlow',
-    description: 'A Density based traffic control system',
+    name: 'MorphoVid',
+    description: 'Generative AI model that transforms videos using diffusion techniques and PyTorch pipelines.',
     tags: [
       {
-        name: 'nextjs',
+        name: 'python',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'pytorch',
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        name: 'diffusers',
         color: 'pink-text-gradient',
       },
     ],
-    image: math,
+    image: MorphoVid,
+    repo: 'https://github.com/kaustubhuk8/VideoDiffusion',
+    demo: '',
+  },
+  {
+    id: 'project-4',
+    name: 'VisionScale',
+    description: 'A cloud-native face recognition pipeline that evolved from EC2-based autoscaling to a fully serverless Lambda architecture. It processes images and videos using FFmpeg and ResNet, showcasing deep learning deployment and elastic AWS infrastructure.',
+    tags: [
+      {
+        name: 'python',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'aws',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 's3',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: VisionScale,
+    repo: 'https://github.com/kaustubhuk8/VideoDiffusion',
+    demo: '',
   },
   
 ];
