@@ -218,7 +218,7 @@ const projects = [
       },
     ],
     image: VisionScale,
-    repo: 'https://github.com/kaustubhuk8/VideoDiffusion',
+    repo: 'https://github.com/kaustubhuk8/VisionScale',
     demo: '',
   },
   
